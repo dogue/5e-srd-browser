@@ -1,0 +1,16 @@
+<div>
+	<h3>{{ data.full_name }}</h3>
+
+	{% if data.skills %}
+	<b>Skills</b>
+	<ul>
+		{% for skill in data.skills %}
+		<li><a href="/skill/{{ skill.index }}">{{ skill.name }}</a></li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+
+	{% for desc in data.desc %}
+	<p>{{ desc }}</p>
+	{% endfor %}
+</div>

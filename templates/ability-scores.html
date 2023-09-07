@@ -1,0 +1,7 @@
+<div>
+	<ul>
+		{% for ability in data %}
+		<li><a href="/ability/{{ ability.index }}">{{ ability.full_name }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
